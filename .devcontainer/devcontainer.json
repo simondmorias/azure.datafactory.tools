@@ -1,0 +1,15 @@
+{
+	"name": "PowerShell",
+	"dockerFile": "Dockerfile",
+
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"extensions": [
+		"ms-vscode.powershell"
+	],
+
+	"postCreateCommand": "pwsh -c 'Install-Module Az -Force; Install-Module Pester -Force'",
+
+}
